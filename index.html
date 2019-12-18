@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anusornleo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/vuesax/dist/vuesax.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <nav class="w-full h-16 fixed top-0 left-0 bg-none text-white">
+            <div class="container mx-auto px-4">
+                <ul>
+                    <li class="float-left p-3"><a class="text-2xl" href="">Anusornleo</a></li>
+                    <li class="float-right p-5"><a href="">About me</a></li>
+                    <li class="float-right p-5"><a href="">Framework</a></li>
+                    <li class="float-right p-5"><a href="">Project</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <section class="h-screen section1">
+            <div class="container mx-auto px-4 py-32">
+                <img class="mx-auto w-64" src="./img/avatar-icon-images-4.jpg" alt="My image">
+                <h1 class="text-center text-5xl my-5 text-white">Anusorn Mennakred</h1>
+                <h1 class="text-center text-3xl my-5 text-white">I am Fontend Developer</h1>
+            </div>
+        </section>
+        <section>
+            <div class="container mx-auto px-32 py-8">
+                <h1 class="text-3xl">About Me</h1>
+                <div class="flex">
+                    <div class="w-1/2 p-5">
+                        <img class="mx-auto w-32" src="./img/avatar-icon-images-4.jpg" alt="my profile">
+                        <div class="mt-8 w-3/5 mx-auto">
+                            <div class="w-full h-6 bg-gray-500 mt-5 rounded-full">
+                                <div class="h-6 bg-orange-500 progress1 rounded-full">
+                                    <h1 class="pl-3">html</h1>
+                                </div>
+                            </div>
+                            <div class="w-full h-6 bg-gray-500 mt-5 rounded-full">
+                                <div class="h-6 bg-orange-500 progress2 rounded-full">
+                                    <h1 class="pl-3">css</h1>
+                                </div>
+                            </div>
+                            <div class="w-full h-6 bg-gray-500 mt-5 rounded-full">
+                                <div class="h-6 bg-orange-500 progress3 rounded-full">
+                                    <h1 class="pl-3">javascript</h1>
+                                </div>
+                            </div>
+                            <div class="w-full h-6 bg-gray-500 mt-5 rounded-full">
+                                <div class="h-6 bg-orange-500 progress4 rounded-full">
+                                    <h1 class="pl-3">python</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" bg-yellow-500 w-1/2 p-5">talk</div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="container mx-auto px-32 py-8">
+                <h1 class="text-3xl">Framework</h1>
+            </div>
+        </section>
+        <section>
+            <div class="container mx-auto px-32 py-8">
+                <h1 class="text-3xl">My Project</h1>
+            </div>
+        </section>
+        <section>
+            <div class="container mx-auto px-32 py-8">
+                <h1 class="text-3xl">Contact Me</h1>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuesax"></script>
+    <script src="js/navbar.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                activeItem: 0,
+                type: 'flat',
+            }
+        })
+    </script>
+</body>
+
+</html>
